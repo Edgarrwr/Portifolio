@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Projetos</title>
+
+	<style type="text/css">
+	* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body { 
+    font-family: Arial;
+   	background:#5c0a97;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+    background: url(img/fundo1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 530px;
+     font-family: times new roman, serif;
+}
+
+
+header p{
+    font-size: 60px;
+    color: #ffffff;
+    padding: 12% 65% 0% 5%;
+    font-family: times new roman, serif;
+    
+}
+#des{
+    padding: 1% 60% 1% 0%;
+    font-size: 16px;
+    color: #ffffff; 
+}
+#link4{
+    
+     margin: 7% 60% 0% 0%;
+     padding: 5px;
+     text-decoration: none;
+     color: #FFFF00;
+     border: 3px solid #FFFF00;
+     position:relative;
+     font-size: 13px;
+    font-family: times new roman, serif;
+}
+#link4:hover{
+    top:5px;box-shadow:0 #666;
+
+}
+
+
+#link{ padding: 25% 45% 0% 0%;
+    color: white;
+}
+
+#link a img{
+    border-radius: 10px;
+}
+
+ul li {
+    list-style-type: none;
+    margin: 5px;
+    }
+
+.projetos{
+    float: left;
+    padding-left: 13%;
+    margin: 60px  5px;
+}
+ .link2{position:relative;
+    margin: 0 2px;}
+
+ .link2 img{
+border-radius: 10px;
+margin-top: 30px;
+ }
+
+.link2:hover{bottom:9px;box-shadow:0 #2403b1;
+}
+.link2 img{
+    box-shadow: 2px 2px 2px 2px #2403b1;
+}
+
+.link6 img{
+	box-shadow: 0px 15px #5c0a97;
+	border-radius: 10px;	
+}
+
+}
+
+.link3{
+    background-color: #000131;
+    padding: 10px;
+    margin-top: 5%;
+}
+.link3 a{
+    margin: 10px;
+    color: #ffffff;
+}
+.menu {
+    border-bottom: 3px solid #ffff00;
+    background-color: #2403b1;
+    text-align: center;
+    color: #fffffff;
+    padding: 8px;
+}
+ .menu a{
+    color: #ffff00;
+     text-decoration: none;
+     padding: 10px 50px;
+     font-family: times new roman, serif;
+}
+
+.menu a:hover{
+    color: #ffffff;
+    border-bottom: 3px solid red;
+}
+		
+.container2{
+
+	flood-color: left;
+    width: 70%;
+    height: 75%;
+    left: 15%;
+    top: 103%;
+    position: absolute;
+    overflow: hidden; 
+}
+
+.nave{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+    transform: translate(-30%);
+    display: flex;
+
+}
+
+.bar{
+    width: 70px;
+    height: 18px;
+    border: 2px solid #000;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.6s;
+
+}
+
+.bar:hover{
+    background-color: #000;
+}
+
+input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 600%;
+    height: 100%;
+
+
+}
+.slide{
+    width: 20%;
+    transition: 0.6s;
+
+}
+.slide img{
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0%;
+
+}
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+#h5{
+	font-size: 40px;
+	color: #FFFF00;
+	}
+	#git{
+		margin-top: 50%;
+		text-align: center;
+	}
+
+	#git a{
+		color: #ffffff;
+		text-decoration: none;
+		text-align: center;
+		border: 2px solid #ffffff;
+		padding: 10px;
+		font-family: times new roman, serif;
+	}
+
+	
+
+
+	footer{
+		margin-top: 5%;
+		text-align: center;
+		height: 80px;
+  		background: #0500bf;
+  		color: #ffffff;
+  		padding-top: 20px;
+  		font-size: 9px;
+
+	}
+
+   
+	
+	</style>
+
+</head>
+<body>
+
+	<div class="menu">
+            <a href="index.html">HOME</a>
+        </div>
+
+    <header>
+      <p>EDGAR ROCHA</p>
+      <p id="des">Desenvolvedor de web</p>
+      <a id="link4"href="Contact me">CONTACT ME</a>
+<div class="projetos">
+        <a class="link6" href="projeto.html"> <img src="img2/projeto1.jfif" width="250" height="220"></a>
+        <a class="link2" href="aboutme.html"> <img src="img/redes.jfif" width="250" height="220"></a>
+        <a class="link2" href="contato.html"> <img src="img/contato.jfif" width="250" height="220"></a>
+         <a class="link2" href="post.html"> <img src="img/post.jfif" width="250" height="220"></a>
+    </div>
+    </header>
+
+
+	<div class="container2"> <!--inico container 2 -->
+	
+    <div class="slides"> <!--inico slides -->
+    	
+
+
+        <input type="radio" name="slide" id="slide1">
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+        <input type="radio" name="slide" id="slide5">
+  
+  
+
+        <div class="slide s1">
+            <img src="img2/projeto3.png">
+        </div>
+
+        <div class="slide">
+            <img src="img2/projeto2.png">
+        </div>
+
+        <div class="slide">
+            <img src="img2/projeto1.png">
+        </div>
+
+     </div>
+
+     <div class="nave" >
+        <label class="bar" for="slide2"></label>
+        <label class="bar" for="slide3"></label>
+        <label class="bar" for="slide4"></label>
+     </div><!--fim slides -->
+    </div><!--fim dontainer 2 -->
+   
+   <div id="git">
+   	<a  href="https://github.com/Edgarrwr?tab=repositories">Veja mais sobre os projetos</a>
+   </div>
+   
+   <footer>
+   	<h2>@todos os direitos reservados</h2>
+   </footer>
+</body>
+</html>
